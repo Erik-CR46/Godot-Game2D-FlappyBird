@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bc41xowkmerv5"]
+
+[ext_resource type="Script" uid="uid://bo03kv01cy0sv" path="res://Scripts/main.gd" id="1_8gbba"]
+[ext_resource type="Texture2D" uid="uid://duiy5x8u0hr7r" path="res://Assets/Sprites/background.png" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://dn7ri5h1uu4ta" path="res://Scenes/player.tscn" id="2_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://nuk8ue07h1tk" path="res://Scenes/spawner.tscn" id="4_jjvhh"]
+
+[node name="Main" type="Node2D" unique_id=1893861264]
+script = ExtResource("1_8gbba")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1992119945]
+position = Vector2(0, -54)
+scale = Vector2(2, 2)
+texture = ExtResource("1_jjgbg")
+centered = false
+
+[node name="Player" parent="." unique_id=460296869 instance=ExtResource("2_bo1nx")]
+position = Vector2(234, 343)
+
+[node name="Spawner" parent="." unique_id=2025475457 instance=ExtResource("4_jjvhh")]
+
+[connection signal="on_game_started" from="Player" to="." method="_on_player_on_game_started"]
+[connection signal="on_obstacle_crash" from="Spawner" to="." method="_on_spawner_on_obstacle_crash"]

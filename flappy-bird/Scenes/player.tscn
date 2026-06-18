@@ -17,7 +17,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("4_3smsa")
 }],
-"loop": true,
+"loop": 1,
 "name": &"fly",
 "speed": 10.0
 }, {
@@ -25,7 +25,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("2_fkybt")
 }],
-"loop": false,
+"loop": 0,
 "name": &"idle",
 "speed": 5.0
 }]
@@ -34,7 +34,6 @@ animations = [{
 radius = 44.407207
 
 [node name="Player" type="CharacterBody2D" unique_id=460296869]
-position = Vector2(233, 89)
 script = ExtResource("1_vgqql")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1617846026]

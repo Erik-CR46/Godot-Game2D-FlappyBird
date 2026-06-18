@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://btyfpf1mvrwkt"]
+
+[ext_resource type="Texture2D" uid="uid://cqejf74ebsjqx" path="res://Assets/Sprites/rockSnowDown.png" id="1_2p81s"]
+[ext_resource type="Script" uid="uid://cxq1c2mlw5mag" path="res://Scripts/obstacle.gd" id="1_rvx1i"]
+[ext_resource type="Texture2D" uid="uid://dtfi2ha7ihubr" path="res://Assets/Sprites/rockSnow.png" id="2_rvx1i"]
+
+[node name="Obstacle" type="Node2D" unique_id=895270368]
+scale = Vector2(2, 2)
+script = ExtResource("1_rvx1i")
+
+[node name="TopArea" type="Area2D" parent="." unique_id=1013545021]
+position = Vector2(0, -250)
+
+[node name="Sprite2D" type="Sprite2D" parent="TopArea" unique_id=2021090085]
+texture = ExtResource("1_2p81s")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TopArea" unique_id=1261928777]
+position = Vector2(0.5, -8.5)
+polygon = PackedVector2Array(-55, -118, 53, -118, 12, 122)
+
+[node name="BottomArea" type="Area2D" parent="." unique_id=973628518]
+position = Vector2(0, 75)
+
+[node name="Sprite2D" type="Sprite2D" parent="BottomArea" unique_id=1600789143]
+texture = ExtResource("2_rvx1i")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BottomArea" unique_id=1111066746]
+position = Vector2(0, 5.5)
+polygon = PackedVector2Array(8, -120, 16, -119, 54, 118, -56, 118)
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=633195693]
+position = Vector2(67.5, -75.5)
+
+[connection signal="player_crashed" from="." to="." method="_on_player_crashed"]
+[connection signal="body_entered" from="TopArea" to="." method="_on_area_body_entered"]
+[connection signal="body_entered" from="BottomArea" to="." method="_on_area_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
