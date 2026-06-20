@@ -1,0 +1,9 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://mawog3xyl4vy"]
+
+[ext_resource type="FontFile" uid="uid://due6jbyye53ld" path="res://Assets/Fonts/font_score.ttf" id="1_w2swr"]
+
+[resource]
+font = ExtResource("1_w2swr")
+font_size = 50
+outline_size = 16
+outline_color = Color(0, 0, 0, 1)

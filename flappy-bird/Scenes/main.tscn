@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dn7ri5h1uu4ta" path="res://Scenes/player.tscn" id="2_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://nuk8ue07h1tk" path="res://Scenes/spawner.tscn" id="4_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://e02eqm7croop" path="res://Scenes/Ground.tscn" id="5_kry3j"]
+[ext_resource type="PackedScene" uid="uid://c7fdypo5fwuv2" path="res://Scenes/game_ui.tscn" id="6_21xkr"]
 
 [node name="Main" type="Node2D" unique_id=1893861264]
 script = ExtResource("1_8gbba")
@@ -18,11 +19,16 @@ centered = false
 [node name="Player" parent="." unique_id=460296869 instance=ExtResource("2_bo1nx")]
 position = Vector2(234, 343)
 
-[node name="Ground" parent="." unique_id=1511924037 instance=ExtResource("5_kry3j")]
-position = Vector2(0, 818)
-
 [node name="Spawner" parent="." unique_id=2025475457 instance=ExtResource("4_jjvhh")]
 
+[node name="Ground" parent="." unique_id=1511924037 instance=ExtResource("5_kry3j")]
+z_index = 1
+position = Vector2(0, 818)
+speed = -150.0
+
+[node name="GameUI" parent="." unique_id=290406472 instance=ExtResource("6_21xkr")]
+
 [connection signal="on_game_started" from="Player" to="." method="_on_player_on_game_started"]
-[connection signal="on_player_crash" from="Ground" to="." method="_on_ground_on_player_crash"]
 [connection signal="on_obstacle_crash" from="Spawner" to="." method="_on_spawner_on_obstacle_crash"]
+[connection signal="on_player_score" from="Spawner" to="." method="_on_spawner_on_player_score"]
+[connection signal="on_player_crash" from="Ground" to="." method="_on_ground_on_player_crash"]

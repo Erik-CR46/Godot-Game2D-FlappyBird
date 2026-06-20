@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://e02eqm7croop"]
 
 [ext_resource type="Texture2D" uid="uid://cvjp578yskg1i" path="res://Assets/Sprites/groundSnow.png" id="1_rxw4n"]
-[ext_resource type="Script" uid="uid://djp35m6qakg02" path="res://Scenes/ground.gd" id="1_s7q8l"]
+[ext_resource type="Script" uid="uid://djp35m6qakg02" path="res://Scripts/ground.gd" id="1_s7q8l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s2hpj"]
 size = Vector2(810, 66)

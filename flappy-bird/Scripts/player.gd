@@ -7,6 +7,10 @@ signal on_game_started #Creamos una señal de que el juego empieza
 @export var rotation_speed := 2.0
 var is_started = false
 var should_proces_input = true
+@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+
+func _ready() -> void:
+	animated_sprite_2d.play("fly")
 
 func _physics_process(delta: float) -> void: #Se ejecuta cada x frames, se utiliza para implementar una logica de juego
 	if Input.is_action_just_pressed("jump") and should_proces_input:

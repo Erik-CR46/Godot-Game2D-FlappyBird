@@ -31,4 +31,6 @@ func _on_ground_body_entered(body: Node2D) -> void:
 	var player := body as Player
 	player.stop_movement()
 	player.stop_gravity()
+
+	
 	
