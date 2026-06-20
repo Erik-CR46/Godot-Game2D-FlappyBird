@@ -1,45 +1,65 @@
 [gd_scene format=3 uid="uid://dn7ri5h1uu4ta"]
 
 [ext_resource type="Script" uid="uid://cn23enpdhc25" path="res://Scripts/player.gd" id="1_vgqql"]
-[ext_resource type="Texture2D" uid="uid://dup4ijlr30qgx" path="res://Assets/Sprites/Planes/planeGreen1.png" id="2_fkybt"]
-[ext_resource type="Texture2D" uid="uid://d0qb6pk4ixwdo" path="res://Assets/Sprites/Planes/planeGreen2.png" id="3_x3wgy"]
-[ext_resource type="Texture2D" uid="uid://7518a2ujpk3x" path="res://Assets/Sprites/Planes/planeGreen3.png" id="4_3smsa"]
+[ext_resource type="Texture2D" uid="uid://bi1aifj0stavd" path="res://Assets/Sprites/Goku/Goku_volando.png" id="2_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://wkjo203rqqxr" path="res://Assets/Sprites/Goku/die1.png" id="2_x3wgy"]
+[ext_resource type="Texture2D" uid="uid://dlf2picqcgk4m" path="res://Assets/Sprites/Goku/die2.png" id="3_3smsa"]
+[ext_resource type="Texture2D" uid="uid://b83agql6wga2v" path="res://Assets/Sprites/Goku/die3.png" id="4_3smsa"]
+[ext_resource type="Texture2D" uid="uid://bj228vl2nq0a6" path="res://Assets/Sprites/Goku/Goku_salto2.png" id="4_x3wgy"]
+[ext_resource type="Texture2D" uid="uid://ce4melnumwi4u" path="res://Assets/Sprites/Goku/Goku_cayendo.png" id="5_3smsa"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8erm5"]
 animations = [{
 "frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_fkybt")
+"duration": 2.0,
+"texture": ExtResource("2_x3wgy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_x3wgy")
+"texture": ExtResource("3_3smsa")
+}],
+"loop": 0,
+"name": &"die",
+"speed": 5.0
 }, {
+"frames": [{
 "duration": 1.0,
 "texture": ExtResource("4_3smsa")
 }],
 "loop": 1,
-"name": &"fly",
-"speed": 10.0
+"name": &"die_ground",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_fkybt")
+"texture": ExtResource("2_cvnsp")
+}],
+"loop": 1,
+"name": &"fly",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 0.8,
+"texture": ExtResource("4_x3wgy")
+}, {
+"duration": 0.3,
+"texture": ExtResource("5_3smsa")
 }],
 "loop": 0,
-"name": &"idle",
+"name": &"jump",
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_f1ek2"]
-radius = 44.407207
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y8vuf"]
+size = Vector2(40, 92)
 
 [node name="Player" type="CharacterBody2D" unique_id=460296869]
 script = ExtResource("1_vgqql")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1617846026]
+scale = Vector2(1.9204887, 1.9427723)
 sprite_frames = SubResource("SpriteFrames_8erm5")
-animation = &"fly"
-autoplay = "idle"
+animation = &"jump"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=761387456]
-shape = SubResource("CircleShape2D_f1ek2")
+position = Vector2(1, 7)
+shape = SubResource("RectangleShape2D_y8vuf")

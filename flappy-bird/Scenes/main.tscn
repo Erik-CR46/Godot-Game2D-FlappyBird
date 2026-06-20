@@ -17,7 +17,7 @@ texture = ExtResource("1_jjgbg")
 centered = false
 
 [node name="Player" parent="." unique_id=460296869 instance=ExtResource("2_bo1nx")]
-position = Vector2(234, 343)
+position = Vector2(236, 236)
 
 [node name="Spawner" parent="." unique_id=2025475457 instance=ExtResource("4_jjvhh")]
 

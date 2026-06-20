@@ -14,9 +14,9 @@ func _ready() -> void:
 func update_score(value: int):
 	score_label.text = str(value)
 
-func calculate_score(score : int, max : int):
+func calculate_score(score : int, max_score : int):
 	current_score.text = str(score)
-	high_score.text = str(max)
+	high_score.text = str(max_score)
 	if score >= 20:
 		medalimg.texture = preload("uid://c5q8rpg33holx")
 	elif score >= 15:

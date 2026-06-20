@@ -30,15 +30,16 @@ func _physics_process(delta: float) -> void: #Se ejecuta cada x frames, se utili
 	
 	
 	move_and_slide() #Cada vez que se ejecuta lee todos los cambios que le hicimos a velocity
-	rotate_player()
+	#rotate_player()
 	
 func jump():
+	animated_sprite_2d.play("jump")
 	velocity.y = -jump_force
-	rotation = deg_to_rad(-30)
+	#rotation = deg_to_rad(-30)
 
-func rotate_player():
-	if velocity.y > 0 and rad_to_deg(rotation) < 80:
-		rotation += rotation_speed * deg_to_rad(1)
+#func rotate_player():
+	#if velocity.y > 0 and rad_to_deg(rotation) < 80:
+		#rotation += rotation_speed * deg_to_rad(1)
 
 func stop_movement():
 	should_proces_input = false

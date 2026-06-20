@@ -28,11 +28,11 @@ func _on_player_on_game_started() -> void: #Llamamos a la señal on_game_started
 	game_ui.ocult_start_menu()
 	
 func _on_spawner_on_obstacle_crash() -> void:
-	player.animated_sprite_2d.play("idle")
+	player.animated_sprite_2d.play("die")
 	player.stop_movement()
 	
 func _on_ground_on_player_crash() -> void:
-	player.animated_sprite_2d.play("idle")
+	player.animated_sprite_2d.play("die_ground")
 	spawner.stop_obstacles()
 	game_ui.calculate_score(score, max_score)
 	game_ui.game_over_panel()
