@@ -32,3 +32,4 @@ speed = -150.0
 [connection signal="on_obstacle_crash" from="Spawner" to="." method="_on_spawner_on_obstacle_crash"]
 [connection signal="on_player_score" from="Spawner" to="." method="_on_spawner_on_player_score"]
 [connection signal="on_player_crash" from="Ground" to="." method="_on_ground_on_player_crash"]
+[connection signal="buyVegeta" from="GameUI" to="." method="_on_game_ui_buy_vegeta"]

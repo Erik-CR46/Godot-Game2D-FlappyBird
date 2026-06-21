@@ -2,13 +2,127 @@
 
 [ext_resource type="Script" uid="uid://ppchltokmvup" path="res://Scripts/game_ui.gd" id="1_gek4i"]
 [ext_resource type="LabelSettings" uid="uid://mawog3xyl4vy" path="res://Assets/Fonts/label75.tres" id="2_bw2rt"]
+[ext_resource type="Texture2D" uid="uid://cc5u2yvdu3qj" path="res://Assets/Sprites/coin.png" id="2_e0vpi"]
 [ext_resource type="Texture2D" uid="uid://dhcfq1juug1ru" path="res://Assets/Sprites/UI/textGetReady.png" id="3_x63ue"]
 [ext_resource type="Texture2D" uid="uid://c42nhwabeqalv" path="res://Assets/Sprites/UI/tapTick.png" id="4_gjn1n"]
+[ext_resource type="FontFile" uid="uid://due6jbyye53ld" path="res://Assets/Fonts/font_score.ttf" id="4_t7uq5"]
 [ext_resource type="Texture2D" uid="uid://i226rtrqfqpn" path="res://Assets/Sprites/UI/textGameOver.png" id="5_y8vuf"]
 [ext_resource type="Texture2D" uid="uid://bs0v2bu31y61k" path="res://Assets/Sprites/UI/UIbg.png" id="6_1pjl6"]
 [ext_resource type="LabelSettings" uid="uid://c1dfu63wgstmf" path="res://Scenes/label_32_yellow.tres" id="7_dvsk4"]
 [ext_resource type="Texture2D" uid="uid://b2akkjgeahful" path="res://Assets/Sprites/UI/medalBronze.png" id="8_74ohg"]
 [ext_resource type="Texture2D" uid="uid://duxaechd3165o" path="res://Assets/Sprites/UI/buttonLarge.png" id="9_cjtla"]
+[ext_resource type="Texture2D" uid="uid://tpup17s318qi" path="res://Assets/Sprites/Vegeta/Explosion/explosion1.png" id="10_ou877"]
+[ext_resource type="Texture2D" uid="uid://ci8kaqn48bw7v" path="res://Assets/Sprites/UI/buttonSmall.png" id="11_74ohg"]
+[ext_resource type="Texture2D" uid="uid://dcgs8vxg1e4qy" path="res://Assets/Sprites/Vegeta/Explosion/explosion2.png" id="11_gwcid"]
+[ext_resource type="Texture2D" uid="uid://bo53mlqlg8jlt" path="res://Assets/Sprites/Vegeta/Explosion/explosion11.png" id="12_yqhrj"]
+[ext_resource type="Texture2D" uid="uid://cp31hfnop5pei" path="res://Assets/Sprites/Vegeta/Explosion/explosion12.png" id="13_0asng"]
+[ext_resource type="Texture2D" uid="uid://ckq1irtgjd138" path="res://Assets/Sprites/Vegeta/Explosion/explosion13.png" id="14_eph8b"]
+[ext_resource type="Texture2D" uid="uid://dymnfhxgetwxd" path="res://Assets/Sprites/Vegeta/Explosion/explosion14.png" id="15_e1rtb"]
+[ext_resource type="Texture2D" uid="uid://cmcqw60mcf1sx" path="res://Assets/Sprites/Vegeta/Explosion/explosion15.png" id="16_o0qq4"]
+[ext_resource type="Texture2D" uid="uid://2ckf0145jhf" path="res://Assets/Sprites/Vegeta/Explosion/explosion16.png" id="17_tccej"]
+[ext_resource type="Texture2D" uid="uid://dr1b4rcgdu4l7" path="res://Assets/Sprites/Vegeta/Explosion/explosion17.png" id="18_heyru"]
+[ext_resource type="Texture2D" uid="uid://b8yx3nf8viq6w" path="res://Assets/Sprites/Vegeta/Explosion/explosion3.png" id="19_aane3"]
+[ext_resource type="Texture2D" uid="uid://byhh04yv0c3ko" path="res://Assets/Sprites/Vegeta/Explosion/explosion4.png" id="20_ctgnk"]
+[ext_resource type="Texture2D" uid="uid://la8bwhjcf0lf" path="res://Assets/Sprites/Vegeta/Explosion/explosion5.png" id="21_mk4rm"]
+[ext_resource type="Texture2D" uid="uid://ctsx7c4ss4xdn" path="res://Assets/Sprites/Vegeta/Explosion/explosion6.png" id="22_7yxbl"]
+[ext_resource type="Texture2D" uid="uid://dlaxi2x54to34" path="res://Assets/Sprites/Vegeta/Explosion/explosion7.png" id="23_5kq4w"]
+[ext_resource type="Texture2D" uid="uid://ck0yx16fmyotg" path="res://Assets/Sprites/Vegeta/Explosion/explosion8.png" id="24_bod63"]
+[ext_resource type="Texture2D" uid="uid://dmkwstpiuhvpy" path="res://Assets/Sprites/Vegeta/Explosion/explosion9.png" id="25_xhkoo"]
+[ext_resource type="Texture2D" uid="uid://b45e1tmpdwj23" path="res://Assets/Sprites/Vegeta/Explosion/explosion10.png" id="26_e0vpi"]
+[ext_resource type="Texture2D" uid="uid://cyroau7ts5ra5" path="res://Assets/Sprites/Gohan/Kame/kame0.png" id="28_tccej"]
+[ext_resource type="Texture2D" uid="uid://gg5gmoie16ts" path="res://Assets/Sprites/Gohan/Kame/kame1.png" id="29_heyru"]
+[ext_resource type="Texture2D" uid="uid://dw1mdru8rphu7" path="res://Assets/Sprites/Gohan/Kame/kame2.png" id="30_aane3"]
+[ext_resource type="Texture2D" uid="uid://curaem8kbu8ip" path="res://Assets/Sprites/Gohan/Kame/kame3.png" id="31_ctgnk"]
+[ext_resource type="Texture2D" uid="uid://cn2hwxxvrp6qn" path="res://Assets/Sprites/Gohan/Kame/kame4.png" id="32_mk4rm"]
+[ext_resource type="Texture2D" uid="uid://14qrt6w3uxnp" path="res://Assets/Sprites/Gohan/Kame/kame5.png" id="33_7yxbl"]
+[ext_resource type="Texture2D" uid="uid://c254ysoxhirm0" path="res://Assets/Sprites/Gohan/Kame/kame6.png" id="34_5kq4w"]
+[ext_resource type="Texture2D" uid="uid://cog1s6w3n653t" path="res://Assets/Sprites/Trunks/Rayo/espada0.png" id="35_bod63"]
+[ext_resource type="Texture2D" uid="uid://u0dbst7kp0l1" path="res://Assets/Sprites/Trunks/Rayo/espada1.png" id="36_xhkoo"]
+[ext_resource type="Texture2D" uid="uid://cpynhe45dpow1" path="res://Assets/Sprites/Trunks/Rayo/espada2.png" id="37_e0vpi"]
+[ext_resource type="Texture2D" uid="uid://dii27kcgl7wco" path="res://Assets/Sprites/Trunks/Rayo/espada3.png" id="38_t7uq5"]
+[ext_resource type="Texture2D" uid="uid://cimxua5u2gn2b" path="res://Assets/Sprites/Trunks/Rayo/espada4.png" id="39_yqqmb"]
+[ext_resource type="Texture2D" uid="uid://cx3fs7ipydxkr" path="res://Assets/Sprites/Trunks/Rayo/espada5.png" id="40_krrsm"]
+[ext_resource type="Texture2D" uid="uid://bb53wyykfrykp" path="res://Assets/Sprites/Trunks/Rayo/espada6.png" id="41_8xp8a"]
+[ext_resource type="Texture2D" uid="uid://des680nxmm3l3" path="res://Assets/Sprites/Trunks/Rayo/espada7.png" id="42_pek0j"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_yqqmb"]
+font = ExtResource("4_t7uq5")
+font_size = 30
+outline_size = 16
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_g4v7s"]
+frames = 17
+frame_0/texture = ExtResource("10_ou877")
+frame_0/duration = 3.0
+frame_1/texture = ExtResource("11_gwcid")
+frame_1/duration = 0.2
+frame_2/texture = ExtResource("19_aane3")
+frame_2/duration = 0.5
+frame_3/texture = ExtResource("20_ctgnk")
+frame_3/duration = 0.2
+frame_4/texture = ExtResource("21_mk4rm")
+frame_4/duration = 0.2
+frame_5/texture = ExtResource("22_7yxbl")
+frame_5/duration = 0.2
+frame_6/texture = ExtResource("23_5kq4w")
+frame_6/duration = 0.2
+frame_7/texture = ExtResource("24_bod63")
+frame_7/duration = 0.2
+frame_8/texture = ExtResource("25_xhkoo")
+frame_8/duration = 0.2
+frame_9/texture = ExtResource("26_e0vpi")
+frame_9/duration = 0.2
+frame_10/texture = ExtResource("12_yqhrj")
+frame_10/duration = 0.2
+frame_11/texture = ExtResource("13_0asng")
+frame_11/duration = 0.2
+frame_12/texture = ExtResource("14_eph8b")
+frame_12/duration = 0.2
+frame_13/texture = ExtResource("15_e1rtb")
+frame_13/duration = 0.2
+frame_14/texture = ExtResource("16_o0qq4")
+frame_14/duration = 0.2
+frame_15/texture = ExtResource("17_tccej")
+frame_15/duration = 0.2
+frame_16/texture = ExtResource("18_heyru")
+frame_16/duration = 3.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_ou877"]
+frames = 7
+frame_0/texture = ExtResource("28_tccej")
+frame_0/duration = 3.0
+frame_1/texture = ExtResource("29_heyru")
+frame_1/duration = 0.2
+frame_2/texture = ExtResource("30_aane3")
+frame_2/duration = 0.2
+frame_3/texture = ExtResource("31_ctgnk")
+frame_3/duration = 0.2
+frame_4/texture = ExtResource("32_mk4rm")
+frame_4/duration = 0.2
+frame_5/texture = ExtResource("33_7yxbl")
+frame_5/duration = 0.2
+frame_6/texture = ExtResource("34_5kq4w")
+frame_6/duration = 3.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_tccej"]
+frames = 8
+frame_0/texture = ExtResource("35_bod63")
+frame_0/duration = 3.0
+frame_1/texture = ExtResource("36_xhkoo")
+frame_1/duration = 0.2
+frame_2/texture = ExtResource("37_e0vpi")
+frame_2/duration = 0.2
+frame_3/texture = ExtResource("38_t7uq5")
+frame_3/duration = 0.2
+frame_4/texture = ExtResource("39_yqqmb")
+frame_4/duration = 0.2
+frame_5/texture = ExtResource("40_krrsm")
+frame_5/duration = 0.2
+frame_6/texture = ExtResource("41_8xp8a")
+frame_6/duration = 0.2
+frame_7/texture = ExtResource("42_pek0j")
+frame_7/duration = 3.0
 
 [sub_resource type="Animation" id="Animation_1t2s1"]
 length = 0.001
@@ -72,6 +186,29 @@ theme_override_constants/margin_top = 32
 theme_override_constants/margin_right = 32
 theme_override_constants/margin_bottom = 32
 
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=800926582]
+custom_maximum_size = Vector2(52, -1)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = -443
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer" unique_id=656920954]
+custom_maximum_size = Vector2(51, 59)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("2_e0vpi")
+stretch_mode = 4
+
+[node name="coin" type="Label" parent="MarginContainer/HBoxContainer" unique_id=507095387]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "0"
+label_settings = ExtResource("7_dvsk4")
+
 [node name="ScoreLabel" type="Label" parent="MarginContainer" unique_id=1996361181]
 unique_name_in_owner = true
 layout_mode = 2
@@ -79,7 +216,8 @@ size_flags_horizontal = 4
 size_flags_vertical = 0
 text = "0
 "
-label_settings = ExtResource("2_bw2rt")
+label_settings = SubResource("LabelSettings_yqqmb")
+horizontal_alignment = 1
 
 [node name="StartMenu" type="Control" parent="MarginContainer" unique_id=289057304]
 custom_minimum_size = Vector2(450, 180)
@@ -190,6 +328,45 @@ layout_mode = 2
 text = "0"
 label_settings = ExtResource("2_bw2rt")
 
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/GameOverMenu" unique_id=1823326115]
+layout_mode = 2
+
+[node name="SkinsButton" type="TextureButton" parent="MarginContainer/GameOverMenu/HBoxContainer" unique_id=422166890]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+texture_normal = ExtResource("9_cjtla")
+
+[node name="Label" type="Label" parent="MarginContainer/GameOverMenu/HBoxContainer/SkinsButton" unique_id=842162072]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SKINS"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton3" type="TextureButton" parent="MarginContainer/GameOverMenu/HBoxContainer" unique_id=1393943043]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+texture_normal = ExtResource("9_cjtla")
+
+[node name="Label" type="Label" parent="MarginContainer/GameOverMenu/HBoxContainer/playButton3" unique_id=378315963]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SHOP"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="playButton" type="TextureButton" parent="MarginContainer/GameOverMenu" unique_id=1435528048]
 layout_mode = 2
 size_flags_horizontal = 4
@@ -209,8 +386,402 @@ label_settings = ExtResource("2_bw2rt")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="ShopMenu" type="VBoxContainer" parent="MarginContainer" unique_id=691162811]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 37
+
+[node name="Label" type="Label" parent="MarginContainer/ShopMenu" unique_id=1675373421]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "SHOP"
+label_settings = ExtResource("2_bw2rt")
+
+[node name="Panel" type="TextureRect" parent="MarginContainer/ShopMenu" unique_id=615144204]
+custom_minimum_size = Vector2(457, 332)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_1pjl6")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/ShopMenu/Panel" unique_id=924135072]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -31.0
+offset_top = -21.5
+offset_right = 23.0
+offset_bottom = -0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 29
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 6
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/ShopMenu/Panel/MarginContainer" unique_id=367770459]
+layout_mode = 2
+theme_override_constants/separation = 4
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer" unique_id=1289855380]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 9
+
+[node name="Label" type="Label" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer" unique_id=2131190301]
+layout_mode = 2
+text = "VEGETA
+50"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer" unique_id=808006871]
+custom_minimum_size = Vector2(107, 109)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("AnimatedTexture_g4v7s")
+
+[node name="buyVegeta" type="TextureButton" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer" unique_id=679345698]
+layout_mode = 2
+texture_normal = ExtResource("11_74ohg")
+
+[node name="Label" type="Label" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer/buyVegeta" unique_id=68804419]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "BUY"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer" unique_id=1101701699]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 9
+
+[node name="Label" type="Label" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=2071316787]
+layout_mode = 2
+text = "GOHAN
+100"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=2112181405]
+custom_minimum_size = Vector2(107, 109)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("AnimatedTexture_ou877")
+
+[node name="buyGohan" type="TextureButton" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=1686071490]
+layout_mode = 2
+texture_normal = ExtResource("11_74ohg")
+
+[node name="Label" type="Label" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer2/buyGohan" unique_id=365924050]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "BUY"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer" unique_id=1873786347]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 9
+
+[node name="Label" type="Label" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer3" unique_id=1968287764]
+layout_mode = 2
+text = "BLACK
+200"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer3" unique_id=380403295]
+custom_minimum_size = Vector2(107, 109)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("AnimatedTexture_tccej")
+
+[node name="buyBlack" type="TextureButton" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer3" unique_id=1943261758]
+layout_mode = 2
+texture_normal = ExtResource("11_74ohg")
+
+[node name="Label" type="Label" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer3/buyBlack" unique_id=1098577086]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "BUY"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/ShopMenu" unique_id=1966550962]
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("11_74ohg")
+
+[node name="Label" type="Label" parent="MarginContainer/ShopMenu/TextureButton" unique_id=441725027]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.5
+offset_top = -15.5
+offset_right = 40.5
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "CLOSE"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SkinsMenu" type="VBoxContainer" parent="MarginContainer" unique_id=51297021]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 37
+
+[node name="Label" type="Label" parent="MarginContainer/SkinsMenu" unique_id=1837970527]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "SHOP"
+label_settings = ExtResource("2_bw2rt")
+
+[node name="Panel" type="TextureRect" parent="MarginContainer/SkinsMenu" unique_id=1836223665]
+custom_minimum_size = Vector2(457, 332)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_1pjl6")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/SkinsMenu/Panel" unique_id=750306841]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -31.0
+offset_top = -21.5
+offset_right = 23.0
+offset_bottom = -0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 29
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 6
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/SkinsMenu/Panel/MarginContainer" unique_id=294707459]
+layout_mode = 2
+theme_override_constants/separation = 4
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer" unique_id=262141672]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 9
+
+[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer" unique_id=410020916]
+layout_mode = 2
+text = "VEGETA
+50"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer" unique_id=821292345]
+custom_minimum_size = Vector2(107, 109)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("AnimatedTexture_g4v7s")
+
+[node name="buyVegeta" type="TextureButton" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1234523266]
+layout_mode = 2
+texture_normal = ExtResource("11_74ohg")
+
+[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer/buyVegeta" unique_id=680433440]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "BUY"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer" unique_id=925730520]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 9
+
+[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=779877197]
+layout_mode = 2
+text = "GOHAN
+100"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=567949005]
+custom_minimum_size = Vector2(107, 109)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("AnimatedTexture_ou877")
+
+[node name="buyGohan" type="TextureButton" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=1093076824]
+layout_mode = 2
+texture_normal = ExtResource("11_74ohg")
+
+[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer2/buyGohan" unique_id=873052785]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "BUY"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer" unique_id=1066103295]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 9
+
+[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer3" unique_id=515290517]
+layout_mode = 2
+text = "BLACK
+200"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer3" unique_id=117194200]
+custom_minimum_size = Vector2(107, 109)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("AnimatedTexture_tccej")
+
+[node name="buyBlack" type="TextureButton" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer3" unique_id=1701681469]
+layout_mode = 2
+texture_normal = ExtResource("11_74ohg")
+
+[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer3/buyBlack" unique_id=884567575]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "BUY"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/SkinsMenu" unique_id=925083634]
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("11_74ohg")
+
+[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/TextureButton" unique_id=1268631971]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.5
+offset_top = -15.5
+offset_right = 40.5
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "CLOSE"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=161553288]
 libraries/ = SubResource("AnimationLibrary_rxsu6")
 autoplay = &"play"
 
+[connection signal="pressed" from="MarginContainer/GameOverMenu/HBoxContainer/SkinsButton" to="." method="_on_skins_button_pressed"]
+[connection signal="pressed" from="MarginContainer/GameOverMenu/HBoxContainer/playButton3" to="." method="_on_play_button_3_pressed"]
 [connection signal="pressed" from="MarginContainer/GameOverMenu/playButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer/buyVegeta" to="." method="_on_buy_vegeta_pressed"]
+[connection signal="pressed" from="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer2/buyGohan" to="." method="_on_buy_gohan_pressed"]
+[connection signal="pressed" from="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer3/buyBlack" to="." method="_on_buy_black_pressed"]
+[connection signal="pressed" from="MarginContainer/ShopMenu/TextureButton" to="." method="_on_texture_button_pressed"]

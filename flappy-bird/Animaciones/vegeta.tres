@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://ccesft4h772i0"]
+
+[ext_resource type="Texture2D" uid="uid://bonik4ng1ha5x" path="res://Assets/Sprites/Vegeta/vegetaChocado.png" id="1_cth24"]
+[ext_resource type="Texture2D" uid="uid://eugtm6g6p56s" path="res://Assets/Sprites/Vegeta/vegetaChocadoCayendo.png" id="2_ajbnw"]
+[ext_resource type="Texture2D" uid="uid://cbc8otqe5r2my" path="res://Assets/Sprites/Vegeta/vegetaMuerto.png" id="3_f6nav"]
+[ext_resource type="Texture2D" uid="uid://bggketepajimq" path="res://Assets/Sprites/Vegeta/vegetaVolando.png" id="4_l3occ"]
+[ext_resource type="Texture2D" uid="uid://c7xdfa6rdsuqf" path="res://Assets/Sprites/Vegeta/vegetaSalto.png" id="5_0dx4m"]
+[ext_resource type="Texture2D" uid="uid://dphxwsia70ngj" path="res://Assets/Sprites/Vegeta/vegetaCayendo.png" id="6_edoot"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("1_cth24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ajbnw")
+}],
+"loop": 0,
+"name": &"die",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_f6nav")
+}],
+"loop": 1,
+"name": &"die_ground",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_l3occ")
+}],
+"loop": 1,
+"name": &"fly",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 0.8,
+"texture": ExtResource("5_0dx4m")
+}, {
+"duration": 0.3,
+"texture": ExtResource("6_edoot")
+}],
+"loop": 0,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"new_animation",
+"speed": 5.0
+}]

@@ -8,20 +8,30 @@ const SAVE_FILE: String = "user://score.dat"
 
 var score: int
 var max_score: int
+var skins = ["goku"]
+var coins: int
 
 func _ready() -> void:
 	load_score()
+	game_ui.coin.text = str(coins)
 
 func save_to_file():
 	if score > max_score:
 		max_score = score
-		var file = FileAccess.open(SAVE_FILE, FileAccess.WRITE)
-		file.store_32(max_score)
+		
+	var file = FileAccess.open(SAVE_FILE, FileAccess.WRITE)
+	file.store_32(max_score)
+	file.store_32(coins)
 		
 func load_score():
+	if !FileAccess.file_exists(SAVE_FILE):
+		max_score = 0
+		coins = 0
+		return
 	var file = FileAccess.open(SAVE_FILE, FileAccess.READ)
 	if file:
 		max_score = file.get_32()
+		coins = file.get_32()
 
 func _on_player_on_game_started() -> void: #Llamamos a la señal on_game_started (se añade player porque viene de esa clase)
 	spawner.timer.start()
@@ -40,6 +50,17 @@ func _on_ground_on_player_crash() -> void:
 
 func _on_spawner_on_player_score() -> void:
 	score += 1
+	coins += 1
 	game_ui.update_score(score)
+	game_ui.coin.text = str(coins)
 	save_to_file()
-		
+
+
+func _on_game_ui_buy_vegeta() -> void:
+	if "vegeta" in skins:
+		return
+	if coins < 50:
+		return
+	else:
+		coins -= 50
+		skins.append("vegeta")

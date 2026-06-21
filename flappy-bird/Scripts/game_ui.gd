@@ -7,6 +7,10 @@ class_name GameUI
 @onready var current_score: Label = %CurrentScore
 @onready var high_score: Label = %HighScore
 @onready var medalimg: TextureRect = %medalimg
+@onready var shop_menu: VBoxContainer = %ShopMenu
+@onready var coin: Label = %coin
+
+signal buyVegeta
 
 func _ready() -> void:
 	score_label.text = "0"
@@ -36,3 +40,30 @@ func game_over_panel():
 
 func _on_play_button_pressed() -> void:
 	get_tree().reload_current_scene() #Para recargar la escena que estabamos jugando
+
+
+func _on_texture_button_pressed() -> void:
+	shop_menu.hide()
+	game_over_menu.show()
+
+
+func _on_play_button_3_pressed() -> void:
+	shop_menu.show()
+	game_over_menu.hide()
+	
+
+
+func _on_buy_vegeta_pressed() -> void:
+	buyVegeta.emit()
+
+
+func _on_buy_gohan_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_buy_black_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_skins_button_pressed() -> void:
+	pass # Replace with function body.
