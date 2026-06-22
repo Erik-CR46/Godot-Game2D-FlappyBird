@@ -9,8 +9,22 @@ class_name GameUI
 @onready var medalimg: TextureRect = %medalimg
 @onready var shop_menu: VBoxContainer = %ShopMenu
 @onready var coin: Label = %coin
+@onready var skins_menu: VBoxContainer = %SkinsMenu
+@onready var vegetaSkinMenu: VBoxContainer = $MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2
+@onready var gokuSkinMenu: VBoxContainer = $MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer
+@onready var gohanSkinMenu: VBoxContainer = $MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3
+@onready var blackSkinMenu: VBoxContainer = $MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/VBoxContainer4
+
+signal updateSkins
 
 signal buyVegeta
+signal buyGohan
+signal buyBlack
+
+signal selectGoku
+signal selectVegeta
+signal selectGohan
+signal selectBlack
 
 func _ready() -> void:
 	score_label.text = "0"
@@ -44,6 +58,7 @@ func _on_play_button_pressed() -> void:
 
 func _on_texture_button_pressed() -> void:
 	shop_menu.hide()
+	skins_menu.hide()
 	game_over_menu.show()
 
 
@@ -55,15 +70,37 @@ func _on_play_button_3_pressed() -> void:
 
 func _on_buy_vegeta_pressed() -> void:
 	buyVegeta.emit()
+	updateSkins.emit()
+	
 
 
 func _on_buy_gohan_pressed() -> void:
-	pass # Replace with function body.
+	buyGohan.emit()
+	updateSkins.emit()
 
 
 func _on_buy_black_pressed() -> void:
-	pass # Replace with function body.
+	buyBlack.emit()
+	updateSkins.emit()
 
 
 func _on_skins_button_pressed() -> void:
-	pass # Replace with function body.
+	skins_menu.show()
+	game_over_menu.hide()
+
+
+func _on_select_vegeta_pressed() -> void:
+	selectVegeta.emit()
+
+
+func _on_select_goku_pressed() -> void:
+	selectGoku.emit()
+
+
+
+func _on_select_gohan_pressed() -> void:
+	selectGohan.emit()
+
+
+func _on_select_black_pressed() -> void:
+	selectBlack.emit()

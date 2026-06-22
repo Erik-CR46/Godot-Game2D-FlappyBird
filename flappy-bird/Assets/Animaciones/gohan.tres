@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bl7b0hjc6nw47"]
+
+[ext_resource type="Texture2D" uid="uid://bwpo1kvamx5xx" path="res://Assets/Sprites/Gohan/gohanChoque1.png" id="1_5wh25"]
+[ext_resource type="Texture2D" uid="uid://c6okcshli00e0" path="res://Assets/Sprites/Gohan/gohanChoque2.png" id="2_34if6"]
+[ext_resource type="Texture2D" uid="uid://c25r0g24l6osm" path="res://Assets/Sprites/Gohan/gohanMuerto.png" id="3_fcdlw"]
+[ext_resource type="Texture2D" uid="uid://ckdrdsp7qlcm1" path="res://Assets/Sprites/Gohan/gohanVolando.png" id="4_7owpu"]
+[ext_resource type="Texture2D" uid="uid://cymu77fmdo4hp" path="res://Assets/Sprites/Gohan/gohanSalto.png" id="5_g720i"]
+[ext_resource type="Texture2D" uid="uid://cc3xhtaffnph7" path="res://Assets/Sprites/Gohan/gohanCayendo.png" id="6_pkwo1"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("1_5wh25")
+}, {
+"duration": 3.0,
+"texture": ExtResource("2_34if6")
+}],
+"loop": 0,
+"name": &"die",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_fcdlw")
+}],
+"loop": 1,
+"name": &"die_ground",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_7owpu")
+}],
+"loop": 1,
+"name": &"fly",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 0.8,
+"texture": ExtResource("5_g720i")
+}, {
+"duration": 0.3,
+"texture": ExtResource("6_pkwo1")
+}],
+"loop": 0,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"new_animation",
+"speed": 5.0
+}]

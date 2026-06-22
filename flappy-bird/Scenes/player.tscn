@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dn7ri5h1uu4ta"]
 
 [ext_resource type="Script" uid="uid://cn23enpdhc25" path="res://Scripts/player.gd" id="1_vgqql"]
-[ext_resource type="SpriteFrames" uid="uid://ccesft4h772i0" path="res://Animaciones/vegeta.tres" id="2_cvnsp"]
+[ext_resource type="SpriteFrames" uid="uid://b7sol3u8mp2kl" path="res://Assets/Animaciones/black.tres" id="2_cvnsp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y8vuf"]
 size = Vector2(40, 92)
@@ -12,8 +12,8 @@ script = ExtResource("1_vgqql")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1617846026]
 scale = Vector2(1.9204887, 1.9427723)
 sprite_frames = ExtResource("2_cvnsp")
-animation = &"jump"
+animation = &"fly"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=761387456]
-position = Vector2(1, 7)
+position = Vector2(8, 18)
 shape = SubResource("RectangleShape2D_y8vuf")

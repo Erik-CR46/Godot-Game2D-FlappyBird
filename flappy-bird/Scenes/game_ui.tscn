@@ -8,7 +8,7 @@
 [ext_resource type="FontFile" uid="uid://due6jbyye53ld" path="res://Assets/Fonts/font_score.ttf" id="4_t7uq5"]
 [ext_resource type="Texture2D" uid="uid://i226rtrqfqpn" path="res://Assets/Sprites/UI/textGameOver.png" id="5_y8vuf"]
 [ext_resource type="Texture2D" uid="uid://bs0v2bu31y61k" path="res://Assets/Sprites/UI/UIbg.png" id="6_1pjl6"]
-[ext_resource type="LabelSettings" uid="uid://c1dfu63wgstmf" path="res://Scenes/label_32_yellow.tres" id="7_dvsk4"]
+[ext_resource type="LabelSettings" uid="uid://c1dfu63wgstmf" path="res://Assets/Fonts/label_32_yellow.tres" id="7_dvsk4"]
 [ext_resource type="Texture2D" uid="uid://b2akkjgeahful" path="res://Assets/Sprites/UI/medalBronze.png" id="8_74ohg"]
 [ext_resource type="Texture2D" uid="uid://duxaechd3165o" path="res://Assets/Sprites/UI/buttonLarge.png" id="9_cjtla"]
 [ext_resource type="Texture2D" uid="uid://tpup17s318qi" path="res://Assets/Sprites/Vegeta/Explosion/explosion1.png" id="10_ou877"]
@@ -36,14 +36,16 @@
 [ext_resource type="Texture2D" uid="uid://cn2hwxxvrp6qn" path="res://Assets/Sprites/Gohan/Kame/kame4.png" id="32_mk4rm"]
 [ext_resource type="Texture2D" uid="uid://14qrt6w3uxnp" path="res://Assets/Sprites/Gohan/Kame/kame5.png" id="33_7yxbl"]
 [ext_resource type="Texture2D" uid="uid://c254ysoxhirm0" path="res://Assets/Sprites/Gohan/Kame/kame6.png" id="34_5kq4w"]
-[ext_resource type="Texture2D" uid="uid://cog1s6w3n653t" path="res://Assets/Sprites/Trunks/Rayo/espada0.png" id="35_bod63"]
-[ext_resource type="Texture2D" uid="uid://u0dbst7kp0l1" path="res://Assets/Sprites/Trunks/Rayo/espada1.png" id="36_xhkoo"]
-[ext_resource type="Texture2D" uid="uid://cpynhe45dpow1" path="res://Assets/Sprites/Trunks/Rayo/espada2.png" id="37_e0vpi"]
-[ext_resource type="Texture2D" uid="uid://dii27kcgl7wco" path="res://Assets/Sprites/Trunks/Rayo/espada3.png" id="38_t7uq5"]
-[ext_resource type="Texture2D" uid="uid://cimxua5u2gn2b" path="res://Assets/Sprites/Trunks/Rayo/espada4.png" id="39_yqqmb"]
-[ext_resource type="Texture2D" uid="uid://cx3fs7ipydxkr" path="res://Assets/Sprites/Trunks/Rayo/espada5.png" id="40_krrsm"]
-[ext_resource type="Texture2D" uid="uid://bb53wyykfrykp" path="res://Assets/Sprites/Trunks/Rayo/espada6.png" id="41_8xp8a"]
-[ext_resource type="Texture2D" uid="uid://des680nxmm3l3" path="res://Assets/Sprites/Trunks/Rayo/espada7.png" id="42_pek0j"]
+[ext_resource type="Texture2D" uid="uid://cog1s6w3n653t" path="res://Assets/Sprites/GokuBlack/Espada/espada0.png" id="35_bod63"]
+[ext_resource type="Texture2D" uid="uid://u0dbst7kp0l1" path="res://Assets/Sprites/GokuBlack/Espada/espada1.png" id="36_xhkoo"]
+[ext_resource type="Texture2D" uid="uid://cpynhe45dpow1" path="res://Assets/Sprites/GokuBlack/Espada/espada2.png" id="37_e0vpi"]
+[ext_resource type="Texture2D" uid="uid://dii27kcgl7wco" path="res://Assets/Sprites/GokuBlack/Espada/espada3.png" id="38_t7uq5"]
+[ext_resource type="Texture2D" uid="uid://cimxua5u2gn2b" path="res://Assets/Sprites/GokuBlack/Espada/espada4.png" id="39_yqqmb"]
+[ext_resource type="Texture2D" uid="uid://cx3fs7ipydxkr" path="res://Assets/Sprites/GokuBlack/Espada/espada5.png" id="40_krrsm"]
+[ext_resource type="Texture2D" uid="uid://bb53wyykfrykp" path="res://Assets/Sprites/GokuBlack/Espada/espada6.png" id="41_8xp8a"]
+[ext_resource type="Texture2D" uid="uid://des680nxmm3l3" path="res://Assets/Sprites/GokuBlack/Espada/espada7.png" id="42_pek0j"]
+[ext_resource type="Texture2D" uid="uid://bj228vl2nq0a6" path="res://Assets/Sprites/Goku/Goku_salto2.png" id="45_yqqmb"]
+[ext_resource type="Texture2D" uid="uid://bggketepajimq" path="res://Assets/Sprites/Vegeta/vegetaVolando.png" id="46_krrsm"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_yqqmb"]
 font = ExtResource("4_t7uq5")
@@ -590,11 +592,11 @@ theme_override_constants/separation = 37
 [node name="Label" type="Label" parent="MarginContainer/SkinsMenu" unique_id=1837970527]
 layout_mode = 2
 size_flags_horizontal = 4
-text = "SHOP"
+text = "SKINS"
 label_settings = ExtResource("2_bw2rt")
 
 [node name="Panel" type="TextureRect" parent="MarginContainer/SkinsMenu" unique_id=1836223665]
-custom_minimum_size = Vector2(457, 332)
+custom_minimum_size = Vector2(457, 512)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -616,38 +618,40 @@ theme_override_constants/margin_top = 29
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 6
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/SkinsMenu/Panel/MarginContainer" unique_id=294707459]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/SkinsMenu/Panel/MarginContainer" unique_id=1056555512]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer" unique_id=294707459]
 layout_mode = 2
 theme_override_constants/separation = 4
 alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer" unique_id=262141672]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=262141672]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_constants/separation = 9
 
-[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer" unique_id=410020916]
+[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=410020916]
 layout_mode = 2
-text = "VEGETA
-50"
+text = "GOKU"
 label_settings = ExtResource("2_bw2rt")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer" unique_id=821292345]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=821292345]
 custom_minimum_size = Vector2(107, 109)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = SubResource("AnimatedTexture_g4v7s")
+texture = ExtResource("45_yqqmb")
 
-[node name="buyVegeta" type="TextureButton" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1234523266]
+[node name="SelectGoku" type="TextureButton" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=1234523266]
 layout_mode = 2
 texture_normal = ExtResource("11_74ohg")
 
-[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer/buyVegeta" unique_id=680433440]
+[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/SelectGoku" unique_id=680433440]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -660,37 +664,38 @@ offset_right = 20.0
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
-text = "BUY"
+text = "SELECT"
 label_settings = ExtResource("2_bw2rt")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer" unique_id=925730520]
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=925730520]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_constants/separation = 9
 
-[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=779877197]
+[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=779877197]
 layout_mode = 2
-text = "GOHAN
-100"
+text = "VEGETA"
 label_settings = ExtResource("2_bw2rt")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=567949005]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=567949005]
 custom_minimum_size = Vector2(107, 109)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = SubResource("AnimatedTexture_ou877")
+texture = ExtResource("46_krrsm")
 
-[node name="buyGohan" type="TextureButton" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=1093076824]
+[node name="SelectVegeta" type="TextureButton" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=1093076824]
+unique_name_in_owner = true
 layout_mode = 2
 texture_normal = ExtResource("11_74ohg")
 
-[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer2/buyGohan" unique_id=873052785]
+[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/SelectVegeta" unique_id=873052785]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -703,37 +708,37 @@ offset_right = 20.0
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
-text = "BUY"
+text = "SELECT"
 label_settings = ExtResource("2_bw2rt")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer" unique_id=1066103295]
+[node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1066103295]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_constants/separation = 9
 
-[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer3" unique_id=515290517]
+[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3" unique_id=515290517]
 layout_mode = 2
-text = "BLACK
-200"
+text = "GOHAN"
 label_settings = ExtResource("2_bw2rt")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer3" unique_id=117194200]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3" unique_id=117194200]
 custom_minimum_size = Vector2(107, 109)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = SubResource("AnimatedTexture_tccej")
+texture = ExtResource("29_heyru")
 
-[node name="buyBlack" type="TextureButton" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer3" unique_id=1701681469]
+[node name="selectGohan" type="TextureButton" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3" unique_id=1701681469]
 layout_mode = 2
 texture_normal = ExtResource("11_74ohg")
 
-[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer3/buyBlack" unique_id=884567575]
+[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/selectGohan" unique_id=884567575]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -746,12 +751,56 @@ offset_right = 20.0
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
-text = "BUY"
+text = "SELECT"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer" unique_id=1111393263]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 9
+
+[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/VBoxContainer4" unique_id=636005586]
+layout_mode = 2
+text = "BLACK"
+label_settings = ExtResource("2_bw2rt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/VBoxContainer4" unique_id=879965547]
+custom_minimum_size = Vector2(107, 109)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("42_pek0j")
+
+[node name="selectBlack" type="TextureButton" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/VBoxContainer4" unique_id=1373861994]
+layout_mode = 2
+texture_normal = ExtResource("11_74ohg")
+
+[node name="Label" type="Label" parent="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/VBoxContainer4/selectBlack" unique_id=104823641]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "SELECT"
 label_settings = ExtResource("2_bw2rt")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="TextureButton" type="TextureButton" parent="MarginContainer/SkinsMenu" unique_id=925083634]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 texture_normal = ExtResource("11_74ohg")
@@ -785,3 +834,9 @@ autoplay = &"play"
 [connection signal="pressed" from="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer2/buyGohan" to="." method="_on_buy_gohan_pressed"]
 [connection signal="pressed" from="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer3/buyBlack" to="." method="_on_buy_black_pressed"]
 [connection signal="pressed" from="MarginContainer/ShopMenu/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/SelectGoku" to="." method="_on_select_goku_pressed"]
+[connection signal="pressed" from="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/SelectVegeta" to="." method="_on_select_vegeta_pressed"]
+[connection signal="pressed" from="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/selectGohan" to="." method="_on_select_gohan_pressed"]
+[connection signal="pressed" from="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/VBoxContainer4/selectBlack" to="." method="_on_select_black_pressed"]
+[connection signal="pressed" from="MarginContainer/SkinsMenu/Panel/MarginContainer/VBoxContainer/VBoxContainer4/selectBlack" to="." method="_on_buy_black_pressed"]
+[connection signal="pressed" from="MarginContainer/SkinsMenu/TextureButton" to="." method="_on_texture_button_pressed"]
