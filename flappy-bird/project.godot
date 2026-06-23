@@ -10,16 +10,21 @@ config_version=5
 
 [application]
 
-config/name="FlappyBird"
+config/name="Dragon Ball Flappy"
 run/main_scene="uid://bc41xowkmerv5"
 config/features=PackedStringArray("4.7", "Mobile")
-config/icon="res://icon.svg"
+config/icon="uid://7sh0qw23834u"
+
+[audio]
+
+buses/default_bus_layout="uid://b0s5itkushsbu"
 
 [display]
 
 window/size/viewport_width=480
 window/size/viewport_height=854
 window/stretch/mode="canvas_items"
+window/handheld/orientation=1
 
 [input]
 
@@ -39,3 +44,4 @@ common/physics_interpolation=true
 
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true

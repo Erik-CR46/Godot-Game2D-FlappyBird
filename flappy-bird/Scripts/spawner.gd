@@ -9,20 +9,22 @@ const OBSTACLE_SCENE = preload("uid://btyfpf1mvrwkt") #Referencia a escena obsta
 @onready var ground: Ground = $"../Ground"
 
 func spawn_obstacle():
-	var obs_instance : Obstacle = OBSTACLE_SCENE.instantiate() #Esto crea una instancia 
-	obs_instance.player_crashed.connect(_on_player_crashed)#Cada vez que instanciemos un objeto, en la clase obstacle
-	#emite la funcion player_crashed que el funcionamiento esta en obstacle, despues conectamos a la funcion de aqui
-	#para que haga dicho funcionamiento
+	var obs_instance : Obstacle = OBSTACLE_SCENE.instantiate() 
+	obs_instance.player_crashed.connect(_on_player_crashed)
 	obs_instance.on_player_scored.connect(_on_player_score)
 	
-	var viewport : Viewport = get_viewport() #Para obtener la pantalla
-	obs_instance.position.x = viewport.get_visible_rect().end.x + 150 #Nos regresa la posicion global del viewport
-	#.end para posicionarlo al final del viewport y le sumamos 150 para dejar un margen
+	var viewport : Viewport = get_viewport() 
+	# La X la mantenemos igual para que aparezcan justo fuera de la pantalla a la derecha
+	obs_instance.position.x = viewport.get_visible_rect().end.x + 150 
 	
-	var half_height = viewport.size.y / 2 #Cuando restas la posicion sube pa arriba, sumar al reves
-	obs_instance.position.y = randf_range(half_height + 309, half_height + 40)
-	add_child(obs_instance) #Pero ahora hay que darle un padre, para que pertenezca a nuestra escena de spawner
+	# Obtenemos la altura original fija de Project Settings
+	var base_height = ProjectSettings.get_setting("display/window/size/viewport_height")
+	var half_height = base_height / 2.0 
 	
+	# (mínimo, máximo) en randf_range
+	obs_instance.position.y = randf_range(half_height + 40, half_height + 309)
+	
+	add_child(obs_instance)
 	
 func stop_obstacles():
 	timer.stop()

@@ -14,6 +14,7 @@ script = ExtResource("1_s7q8l")
 speed = null
 
 [node name="Ground1" type="Area2D" parent="." unique_id=1954919449]
+physics_interpolation_mode = 2
 position = Vector2(404, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Ground1" unique_id=1303961950]
@@ -26,6 +27,7 @@ position = Vector2(-1, 1)
 shape = SubResource("RectangleShape2D_s2hpj")
 
 [node name="Ground2" type="Area2D" parent="." unique_id=1551755497]
+physics_interpolation_mode = 2
 position = Vector2(1212, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Ground2" unique_id=118534919]

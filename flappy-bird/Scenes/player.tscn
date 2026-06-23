@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://cn23enpdhc25" path="res://Scripts/player.gd" id="1_vgqql"]
 [ext_resource type="SpriteFrames" uid="uid://b7sol3u8mp2kl" path="res://Assets/Animaciones/black.tres" id="2_cvnsp"]
+[ext_resource type="AudioStream" uid="uid://boijqqe7noct3" path="res://Assets/Audio/ball-dragon-gt-jump.mp3" id="3_6t5aa"]
+[ext_resource type="AudioStream" uid="uid://bafti58vmjt4w" path="res://Assets/Audio/super-punch-mma.mp3" id="4_vgqql"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y8vuf"]
 size = Vector2(40, 92)
@@ -17,3 +19,11 @@ animation = &"fly"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=761387456]
 position = Vector2(8, 18)
 shape = SubResource("RectangleShape2D_y8vuf")
+
+[node name="Salto" type="AudioStreamPlayer" parent="." unique_id=1403389235]
+stream = ExtResource("3_6t5aa")
+bus = &"Salto"
+
+[node name="Golpe" type="AudioStreamPlayer" parent="." unique_id=297375814]
+stream = ExtResource("4_vgqql")
+bus = &"Golpe"

@@ -8,6 +8,8 @@ signal on_game_started #Creamos una señal de que el juego empieza
 var is_started = false
 var should_proces_input = true
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@onready var salto: AudioStreamPlayer = $Salto
+@onready var golpe: AudioStreamPlayer = $Golpe
 
 func _ready() -> void:
 	animated_sprite_2d.play("fly")
@@ -34,6 +36,7 @@ func _physics_process(delta: float) -> void: #Se ejecuta cada x frames, se utili
 	
 func jump():
 	animated_sprite_2d.play("jump")
+	salto.play()
 	velocity.y = -jump_force
 	#rotation = deg_to_rad(-30)
 

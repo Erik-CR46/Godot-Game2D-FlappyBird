@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://nuk8ue07h1tk" path="res://Scenes/spawner.tscn" id="4_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://e02eqm7croop" path="res://Scenes/Ground.tscn" id="5_kry3j"]
 [ext_resource type="PackedScene" uid="uid://c7fdypo5fwuv2" path="res://Scenes/game_ui.tscn" id="6_21xkr"]
+[ext_resource type="AudioStream" uid="uid://do8lqi648utcu" path="res://Assets/Audio/dannymurillo_poduction-loop_suave_dm-239803.mp3" id="7_6bp64"]
 
 [node name="Main" type="Node2D" unique_id=1893861264]
 script = ExtResource("1_8gbba")
@@ -27,6 +28,11 @@ position = Vector2(0, 818)
 speed = -150.0
 
 [node name="GameUI" parent="." unique_id=290406472 instance=ExtResource("6_21xkr")]
+
+[node name="Fondo" type="AudioStreamPlayer" parent="." unique_id=759876576]
+stream = ExtResource("7_6bp64")
+bus = &"Fondo"
+parameters/looping = true
 
 [connection signal="on_game_started" from="Player" to="." method="_on_player_on_game_started"]
 [connection signal="on_obstacle_crash" from="Spawner" to="." method="_on_spawner_on_obstacle_crash"]

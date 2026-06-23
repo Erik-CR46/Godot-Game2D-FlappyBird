@@ -439,7 +439,7 @@ theme_override_constants/separation = 9
 [node name="Label" type="Label" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer" unique_id=2131190301]
 layout_mode = 2
 text = "VEGETA
-50"
+50€"
 label_settings = ExtResource("2_bw2rt")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -482,7 +482,7 @@ theme_override_constants/separation = 9
 [node name="Label" type="Label" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=2071316787]
 layout_mode = 2
 text = "GOHAN
-100"
+100€"
 label_settings = ExtResource("2_bw2rt")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -525,7 +525,7 @@ theme_override_constants/separation = 9
 [node name="Label" type="Label" parent="MarginContainer/ShopMenu/Panel/MarginContainer/HBoxContainer/VBoxContainer3" unique_id=1968287764]
 layout_mode = 2
 text = "BLACK
-200"
+200€"
 label_settings = ExtResource("2_bw2rt")
 horizontal_alignment = 1
 vertical_alignment = 1
