@@ -109,10 +109,10 @@ func equip_skin(nombre: String):
 func _on_game_ui_buy_gohan() -> void:
 	if "gohan" in skins:
 		return
-	if coins < 150:
+	if coins < 100:
 		return
 	else:
-		coins -= 150
+		coins -= 100
 		game_ui.coin.text = str(coins)
 		skins.append("gohan")
 		save_to_file()
